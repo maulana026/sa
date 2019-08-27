@@ -81,7 +81,7 @@ export default class Map extends Component {
         db.collection("angkot").where("berbahaya", "==", false).get().then((querySnapshot) => {
             querySnapshot.forEach((doc) => {
                 to = point([Number(doc.data().lat), Number(doc.data().lon)]);                    
-                var distance1 = distance(from, from, options);
+                var distance1 = distance(from, to, options);
                 if(distance1 <= 1) {
                     this.setState(({terdekat}) => ({terdekat: {
                         ...terdekat,
