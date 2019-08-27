@@ -5,9 +5,104 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: auto !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.mapboxgl-marker  {
+  left: 0!important;
+  right: 0!important;
+  top: 0!important;
+  bottom: 0!important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbottom {
+
+  background: none !important;
+  padding: 10px 20px 40px 20px;
+  border: none;
+  box-shadow: none;
+
+}
+#navbottomcontent {
+  padding: 0;
+  border-radius: .1rem !important;
+}
+
+#kokoko {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#navatas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 120;
+  padding: 35px 10px 10px 10px;
+}
+#navatascontent h1 {
+  font-size: 20px;
+  color: #fff;
+}
+
+#jemputsaya {
+  margin: 100px 0;
+}
+
+#infoo {
+
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+
+}
+
+#infoocontent, #infoocontent1 {
+  padding: 5px;
+  border-radius: .1rem;
+  background: #fff;
+}
+
+#infoangkot {
+  margin: 100px 0;
+}
+
+#infoangkottitle,#infoangkottitle2 {
+  text-align: left;
+  padding: 10px 25px;
+}
+#seputarangkot {
+  padding: 20px;
+  margin: 100px 0;
+}
+
+#maekre .mapboxgl-marker  {
+  z-index: 50;
+}
+
+#jempusaya {
+  margin: 100px 0;
 }
