@@ -44,6 +44,7 @@ export default class Jemputsaya extends Component {
     componentWillMount () {
         var db = Firebase.firestore();
         var data = db.collection("penumpang").doc(this.state.tokenne);
+        var dayta = db.collection("angkot").doc(this.state.angkot);
         data.get().then(doc => {
             if (!doc.exists) {
                 data.set({
@@ -52,6 +53,7 @@ export default class Jemputsaya extends Component {
                     turun: this.state.turun,
                     angkot: this.state.angkot
                 });
+                dayta.set({ penumpang: this.state.tokenne })
             } else {
                 var naikKet = Boolean(doc.data().naik);
                     var turunKet = Boolean(doc.data().turun);
