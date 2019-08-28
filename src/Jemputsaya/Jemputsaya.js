@@ -53,7 +53,7 @@ export default class Jemputsaya extends Component {
                     turun: this.state.turun,
                     angkot: this.state.angkot
                 });
-                dayta.set({ penumpang: this.state.tokenne })
+                dayta.update({ penumpang: this.state.tokenne })
             } else {
                 var naikKet = Boolean(doc.data().naik);
                     var turunKet = Boolean(doc.data().turun);
