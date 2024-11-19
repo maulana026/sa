@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@turf/turf": "^5.1.6",
-    "firebase": "^6.4.2",
+    "firebase": "^10.9.0",
     "html-react-parser": "^0.9.1",
     "rand-token": "^0.4.0",
     "react": "^16.9.0",
